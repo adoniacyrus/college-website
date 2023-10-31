@@ -1,0 +1,216 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav{
+    background: rgb(86, 37, 38);
+    height: 80px;
+    width: 100%;
+    z-index: 500;
+    position: fixed;
+}
+#logo{
+    height: 80px;
+    width: 80px;
+    margin: 0px 10px;
+    border-radius: 50%;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px ;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+a.active,a:hover{
+    background: #6a3c37;
+    transition:  .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+main{ 
+    position: absolute;
+    width: 100%;
+    font-size: 20px;
+}
+
+.opening{
+    background-image: url(./images/college-image.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 38%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+#name {
+
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    color: white;
+    font-size: 30px;
+    justify-content: space-around;
+}
+
+#about{
+    top: 20px;
+    padding-left: 26px;
+}
+.about{
+    height: 500px;
+    width: 100%;
+    margin: 50px;
+}
+.about p{
+
+    display: flex;
+    padding-left: 26px;
+}
+#specs{
+    background-color: #ded2d1;
+}
+
+.label{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: #6a3c37;
+    color: white;
+}
+
+.row{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 700px;
+}
+
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col div .fa{
+    font-size: 28px;
+    color: #6a3c37;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p{
+    padding: 0;
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.contact-col input,.contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid#ccc;
+    box-sizing: border-box;
+}
+.footer {
+    background-color: #723838;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+@media(max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #5a7492;
+        top: 80px;
+        right: 100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        }
+    a:hover,a.active{
+        background: none;
+        color: #6fa5ce;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+        
+}
+
+
+/*----courses----*/
+.nav{
+    height: 50px;
+    width: 100%;
+    background-color: #6a3c37;
+    color: white;
+}
+
+.nav p{
+    padding: 12px 10px;
+}
+
+.nav p a{
+    color: white;
+}
+
+
